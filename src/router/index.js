@@ -14,6 +14,26 @@ const routes = [
     path: "/register",
     name: "register",
     component: () => import('@/views/register/Main.vue')
+},
+{
+    path: "/dashboard",
+    name: "dashboard",
+    component: () => import('@/views/dashboard/Main.vue')
+},
+{
+    path: '/profil',
+    name: 'profil',
+    component: () => import('@/views/profil/Main')
+},
+{
+    path: '/about',
+    name: 'about',
+    component: () => import('@/views/about/Main')
+},
+{
+    path: '/users',
+    name: 'users',
+    component: () => import('@/views/users/Main')
 }];
 const router = createRouter({
     history: createWebHistory(),
